@@ -1,5 +1,5 @@
 {
-  "name": "ONiOFF Smart Light Switch",
+  "name": "ONiOFF Smart Switch",
   "version": "",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
@@ -7,12 +7,12 @@
     {
       "chipFamily": "ESP8266",
       "ota": {
-        "path": "onioff-light-esp8266/onioff-light-esp8266.ota.bin",
-        "md5": "d4de06f865ff2dbe11f08a101b893f42"
+        "path": "onioff-switch-esp8266/onioff-switch-esp8266.ota.bin",
+        "md5": "f46b8df60ab1e6b1c5c5b765df60f9bf"
       },
       "parts": [
         {
-          "path": "onioff-light-esp8266/onioff-light-esp8266.factory.bin",
+          "path": "onioff-switch-esp8266/onioff-switch-esp8266.factory.bin",
           "offset": 0
         }
       ]
