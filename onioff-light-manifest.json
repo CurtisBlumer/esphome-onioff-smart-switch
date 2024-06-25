@@ -1,5 +1,5 @@
 {
-  "name": "ONiOFF Smart Light Switch",
+  "name": "ONiOFF Smart Fan Switch",
   "version": "",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
@@ -7,12 +7,12 @@
     {
       "chipFamily": "ESP8266",
       "ota": {
-        "path": "onioff-light-esp8266/onioff-light-esp8266.ota.bin",
-        "md5": "97ff804ff8fec2ade88228f2b5cff993"
+        "path": "onioff-fan-esp8266/onioff-fan-esp8266.ota.bin",
+        "md5": "9d3f96f3f4b54f39076f5ea157e8cb5b"
       },
       "parts": [
         {
-          "path": "onioff-light-esp8266/onioff-light-esp8266.factory.bin",
+          "path": "onioff-fan-esp8266/onioff-fan-esp8266.factory.bin",
           "offset": 0
         }
       ]
