@@ -9,8 +9,8 @@ substitutions:
 
 esphome:
   project:
-    project_name: "onioff-fan"
-    project_version: 0.9.0
+    name: cblumer.onioff-fan
+    version: 0.9.1
 
 # This should point to the public location of this yaml file.
 dashboard_import:
