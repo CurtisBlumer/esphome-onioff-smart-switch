@@ -1,3 +1,4 @@
 title: ESPHome for the ONiOFF Smart Switch
 description: Powered by ESPHome and ESP Web Tools
 theme: jekyll-theme-slate
+version: 0.0.1
