@@ -2,7 +2,7 @@ esphome:
   # For (future) identification, configuration and updates
   project:
     name: cblumer.onioff-base
-    version: 0.9.1
+    version: 0.9.2
 
 esp8266:
   board: esp01_1m
@@ -34,7 +34,7 @@ output:
     id: relay
 
 ${device_type}:
-  - platform: binary
+  - platform: ${device_platform}
     name: ${device_name}
     id: relay_${device_type}
     output: relay

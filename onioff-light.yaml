@@ -2,15 +2,12 @@
 substitutions:
   name: "onioff-light"
   friendly_name: "ONiOFF Light Switch"
-
-  device_type: "light"
-  device_name: "Light"
   restore_mode: "ALWAYS_ON"
 
 esphome:
   project:
     name: cblumer.onioff-light
-    version: 0.9.1
+    version: 0.9.2
 
 # This should point to the public location of this yaml file.
 dashboard_import:
@@ -26,7 +23,8 @@ packages:
   onioff-base: !include
     file: common/onioff-base.yaml
     vars:
-      device_name: ${device_name}
-      device_type: ${device_type}
+      device_name: Light
+      device_type: light
+      device_platform: binary
       restore_mode: ${restore_mode}
 
