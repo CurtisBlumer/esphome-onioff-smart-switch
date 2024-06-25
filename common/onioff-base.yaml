@@ -1,0 +1,41 @@
+esphome:
+  # For (future) identification, configuration and updates
+  project:
+    name: cblumer.onioff-base
+    version: 0.9.0
+
+esp8266:
+  board: esp01_1m
+  restore_from_flash: true
+  early_pin_init: false
+
+status_led:
+  pin:
+    number: 1
+    inverted: true
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: 5
+      inverted: true
+      mode:
+        input: true
+        pullup: true
+    id: toggle_button
+    internal: true
+    on_press:
+      then:
+        - ${device_type}.toggle: ${device_id}
+
+output:
+  - platform: gpio
+    pin: 12
+    id: relay
+
+${device_type}:
+  - platform: binary
+    name: ${device_name}
+    id: relay_${device_type}
+    output: relay
+    restore_mode: ${restore_mode}

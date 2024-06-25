@@ -6,10 +6,33 @@ on:
       - main
 
 jobs:
-  build:
-    uses: esphome/workflows/.github/workflows/publish.yml@main
+  switch:
+    uses: esphome/workflows/.github/workflows/publish.yml@dependabot/github_actions/esphome/build-action-3.1.0
     with:
-      # CHANGEME: Set the filenames of your config files here:
-      files: project-template-esp32.yaml,project-template-esp8266.yaml
-      # CHANGEME: Set the name of your project here:
-      name: Template Project
+      # Set the filenames of your config files here:
+      files: onioff-switch.yaml
+      # Set the name of your project here:
+      name: ONiOFF Smart Switch
+      # Don't clean other project files
+      clean: false
+      #manifest_filename: onioff-light-manifest.json
+  light:
+    uses: esphome/workflows/.github/workflows/publish.yml@dependabot/github_actions/esphome/build-action-3.1.0
+    with:
+      # Set the filenames of your config files here:
+      files: onioff-light.yaml
+      # Set the name of your project here:
+      name: ONiOFF Smart Light Switch
+      # Don't clean other project files
+      clean: false
+      #manifest_filename: onioff-light-manifest.json
+  fan:
+    uses: esphome/workflows/.github/workflows/publish.yml@dependabot/github_actions/esphome/build-action-3.1.0
+    with:
+      # Set the filenames of your config files here:
+      files: onioff-fan.yaml
+      # Set the name of your project here:
+      name: ONiOFF Smart Fan Switch
+      # Don't clean other project files
+      clean: false
+      #manifest_filename: onioff-light-manifest.json
