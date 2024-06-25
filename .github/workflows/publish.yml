@@ -14,8 +14,8 @@ jobs:
       # Set the name of your project here:
       name: ONiOFF Smart Switch
       # Don't clean other project files
-      clean: false
-      #manifest_filename: onioff-light-manifest.json
+      clean: true
+      manifest_filename: onioff-light-manifest.json
   light:
     uses: esphome/workflows/.github/workflows/publish.yml@dependabot/github_actions/esphome/build-action-3.1.0
     with:
@@ -24,8 +24,8 @@ jobs:
       # Set the name of your project here:
       name: ONiOFF Smart Light Switch
       # Don't clean other project files
-      clean: false
-      #manifest_filename: onioff-light-manifest.json
+      clean: true
+      manifest_filename: onioff-light-manifest.json
   fan:
     uses: esphome/workflows/.github/workflows/publish.yml@dependabot/github_actions/esphome/build-action-3.1.0
     with:
@@ -34,5 +34,5 @@ jobs:
       # Set the name of your project here:
       name: ONiOFF Smart Fan Switch
       # Don't clean other project files
-      clean: false
-      #manifest_filename: onioff-light-manifest.json
+      clean: true
+      manifest_filename: onioff-light-manifest.json
