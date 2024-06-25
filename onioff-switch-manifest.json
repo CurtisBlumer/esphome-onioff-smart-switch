@@ -1,0 +1,21 @@
+{
+  "name": "ONiOFF Smart Switch",
+  "version": "",
+  "home_assistant_domain": "esphome",
+  "new_install_skip_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP8266",
+      "ota": {
+        "path": "onioff-switch-esp8266/onioff-switch-esp8266.ota.bin",
+        "md5": "e160ffb8b6c15d1eaf7f6bd0c26d1757"
+      },
+      "parts": [
+        {
+          "path": "onioff-switch-esp8266/onioff-switch-esp8266.factory.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
