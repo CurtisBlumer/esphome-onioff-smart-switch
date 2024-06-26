@@ -2,7 +2,7 @@
   "chipFamily": "ESP8266",
   "ota": {
     "path": "onioff-switch-esp8266/onioff-switch-esp8266.ota.bin",
-    "md5": "b1aed93025357ce439e5c2d34a98c9be"
+    "md5": "f2ad694ba5f0daeb780fcf29c77df3db"
   },
   "parts": [
     {
