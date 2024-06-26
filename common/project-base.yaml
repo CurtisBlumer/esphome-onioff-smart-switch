@@ -8,7 +8,7 @@ esphome:
   # configuration and updates.
   project:
     name: cblumer.project-base
-    version: 1.0.7
+    version: 1.0.8
 
 # To be able to get logs from the device via serial and api.
 logger:
@@ -148,3 +148,7 @@ text_sensor:
     dns_address:
       name: DNS Address
       entity_category: "diagnostic"
+
+button:
+  - platform: restart
+    name: "Restart"
