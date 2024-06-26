@@ -11,7 +11,7 @@ esphome:
 
 # This should point to the public location of this yaml file.
 dashboard_import:
-  package_import_url: github://CurtisBlumer/esphome-onioff-smart-switch/onioff-fan.yaml@main
+  package_import_url: github://CurtisBlumer/esphome-onioff-smart-switch/onioff-switch-fan.yaml@main
 
 packages:
   onioff-base: !include

@@ -3,15 +3,15 @@ substitutions:
   restore_mode: "ALWAYS_ON"
 
 esphome:
-  name: "onioff-light"
+  name: "onioff-switch-light"
   friendly_name: "ONiOFF Light Switch"
   project:
-    name: cblumer.onioff-light
+    name: cblumer.onioff-switch-light
     version: 1.0.1
 
 # This should point to the public location of this yaml file.
 dashboard_import:
-  package_import_url: github://CurtisBlumer/esphome-onioff-smart-switch/onioff-light.yaml@main
+  package_import_url: github://CurtisBlumer/esphome-onioff-smart-switch/onioff-switch-light.yaml@main
 
 packages:
   onioff-base: !include
