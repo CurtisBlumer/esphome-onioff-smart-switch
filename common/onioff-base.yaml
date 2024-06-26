@@ -3,7 +3,7 @@ esphome:
   # For (future) identification, configuration and updates
   project:
     name: cblumer.onioff-base
-    version: 1.0.2
+    version: 1.0.3
 
 packages:
   project-esp8266: !include project-esp8266.yaml
@@ -12,7 +12,6 @@ packages:
 status_led:
   pin:
     number: 1
-    inverted: true
 
 binary_sensor:
   - platform: gpio
