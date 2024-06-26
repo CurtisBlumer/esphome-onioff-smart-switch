@@ -8,7 +8,7 @@
       "chipFamily": "ESP8266",
       "ota": {
         "path": "onioff-fan-esp8266/onioff-fan-esp8266.ota.bin",
-        "md5": "7e8f0b1f47fc15bf60f8eddf3b1cf2d0"
+        "md5": "162deeddff020075badd2c7b40db0ebf"
       },
       "parts": [
         {
