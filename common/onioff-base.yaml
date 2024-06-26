@@ -3,11 +3,11 @@ esphome:
   # For (future) identification, configuration and updates
   project:
     name: cblumer.onioff-base
-    version: 1.0.4
+    version: 1.0.5
 
 packages:
-  project-esp8266: !include
-    url: https://github.com/CurtisBlumer/esphome-onioff-smart-switch
+  project-esp8266:
+    url: https://github.com/CurtisBlumer/esphome-project-defaults
     ref: main
     files:
       - project-esp8266.yaml
