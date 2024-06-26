@@ -7,7 +7,7 @@ esphome:
   friendly_name: "ONiOFF Switch"
   project:
     name: cblumer.onioff-switch
-    version: 0.9.3
+    version: 1.0.0
 
 # This should point to the public location of this yaml file.
 dashboard_import:
