@@ -3,7 +3,7 @@ esphome:
   # For (future) identification, configuration and updates
   project:
     name: cblumer.onioff-base
-    version: 1.0.0
+    version: 1.0.1
 
 packages:
   project-esp8266: !include project-esp8266.yaml
@@ -39,3 +39,9 @@ ${device_type}:
     id: relay_${device_type}
     output: relay
     restore_mode: ${restore_mode}
+
+sensor:
+  - platform: duty_cycle
+    id: relay_${device_type}_duty_cycle
+    name: ${device_name} Duty Cycle
+    pin: 12
