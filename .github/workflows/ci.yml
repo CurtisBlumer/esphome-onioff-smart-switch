@@ -11,8 +11,8 @@ jobs:
       matrix:
         file:
           - onioff-switch.yaml
-          - onioff-light.yaml
-          - onioff-fan.yaml
+          - onioff-switch-light.yaml
+          - onioff-switch-fan.yaml
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4.1.7

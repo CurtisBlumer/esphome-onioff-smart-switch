@@ -22,20 +22,20 @@ jobs:
     uses: esphome/workflows/.github/workflows/publish.yml@dependabot/github_actions/esphome/build-action-3.1.0
     with:
       # Set the filenames of your config files here:
-      files: onioff-light.yaml
+      files: onioff-switch-light.yaml
       # Set the name of your project here:
       name: ONiOFF Smart Light Switch
       # Don't clean other project files
       clean: false
-      manifest_filename: onioff-light-manifest.json
+      manifest_filename: onioff-switch-light-manifest.json
   fan:
     name: Build and publish ONiOFF fan switch
     uses: esphome/workflows/.github/workflows/publish.yml@dependabot/github_actions/esphome/build-action-3.1.0
     with:
       # Set the filenames of your config files here:
-      files: onioff-fan.yaml
+      files: onioff-switch-fan.yaml
       # Set the name of your project here:
       name: ONiOFF Smart Fan Switch
       # Don't clean other project files
       clean: false
-      manifest_filename: onioff-fan-manifest.json
+      manifest_filename: onioff-switch-fan-manifest.json
