@@ -1,8 +1,12 @@
+packages:
+  project-base: !include project-base.yaml
+
 esphome:
+  name: onioff-base
   # For (future) identification, configuration and updates
   project:
     name: cblumer.onioff-base
-    version: 0.9.2
+    version: 0.9.3
 
 esp8266:
   board: esp01_1m
