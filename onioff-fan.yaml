@@ -1,10 +1,10 @@
 # These substitutions allow the end user to override certain values
 substitutions:
-  name: "onioff-fan"
-  friendly_name: "ONiOFF Fan Switch"
   restore_mode: "ALWAYS_OFF"
 
 esphome:
+  name: "onioff-fan"
+  friendly_name: "ONiOFF Fan Switch"
   project:
     name: cblumer.onioff-fan
     version: 0.9.2
@@ -14,12 +14,6 @@ dashboard_import:
   package_import_url: github://esphome/esphome-onioff-smart-switch/onioff-fan.yaml@main
 
 packages:
-  device-base: !include
-    file: common/project-base.yaml
-    vars:
-      name: ${name}
-      friendly_name: ${friendly_name}
-
   onioff-base: !include
     file: common/onioff-base.yaml
     vars:
