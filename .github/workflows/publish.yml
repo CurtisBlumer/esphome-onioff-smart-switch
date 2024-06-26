@@ -1,4 +1,4 @@
-name: Build and publish ESPHome firmware and website
+name: Build and publish ESPHome firmware and website for ONiOFF Smart Switch
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   switch:
-    name: Build and publish generic switch template
+    name: Build and publish ONiOFF generic switch
     uses: esphome/workflows/.github/workflows/publish.yml@dependabot/github_actions/esphome/build-action-3.1.0
     with:
       # Set the filenames of your config files here:
@@ -18,7 +18,7 @@ jobs:
       clean: false
       manifest_filename: onioff-switch-manifest.json
   light:
-    name: Build and publish light switch template
+    name: Build and publish ONiOFF light switch
     uses: esphome/workflows/.github/workflows/publish.yml@dependabot/github_actions/esphome/build-action-3.1.0
     with:
       # Set the filenames of your config files here:
@@ -29,7 +29,7 @@ jobs:
       clean: false
       manifest_filename: onioff-light-manifest.json
   fan:
-    name: Build and publish fan switch template
+    name: Build and publish ONiOFF fan switch
     uses: esphome/workflows/.github/workflows/publish.yml@dependabot/github_actions/esphome/build-action-3.1.0
     with:
       # Set the filenames of your config files here:
