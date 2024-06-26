@@ -1,17 +1,12 @@
-packages:
-  project-base: !include project-base.yaml
-
 esphome:
   name: onioff-base
   # For (future) identification, configuration and updates
   project:
     name: cblumer.onioff-base
-    version: 0.9.3
+    version: 1.0.0
 
-esp8266:
-  board: esp01_1m
-  restore_from_flash: true
-  early_pin_init: false
+packages:
+  project-esp8266: !include project-esp8266.yaml
 
 status_led:
   pin:
