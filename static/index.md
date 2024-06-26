@@ -20,12 +20,12 @@ The relay is configured as a switch that does not come back on after power loss.
 
 The relay is configured as a light that always comes back on after power loss.
 
-<esp-web-install-button manifest="./onioff-light-manifest.json"></esp-web-install-button>
+<esp-web-install-button manifest="./onioff-switch-light-manifest.json"></esp-web-install-button>
 
 ## Fan
 
 The relay is configured as a fan that does not come back on after power loss.
 
-<esp-web-install-button manifest="./onioff-fan-manifest.json"></esp-web-install-button>
+<esp-web-install-button manifest="./onioff-switch-fan-manifest.json"></esp-web-install-button>
 
 <script type="module" src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js?module"></script>
