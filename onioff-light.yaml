@@ -1,25 +1,19 @@
 # These substitutions allow the end user to override certain values
 substitutions:
-  name: "onioff-light"
-  friendly_name: "ONiOFF Light Switch"
   restore_mode: "ALWAYS_ON"
 
 esphome:
+  name: "onioff-light"
+  friendly_name: "ONiOFF Light Switch"
   project:
     name: cblumer.onioff-light
-    version: 0.9.2
+    version: 0.9.3
 
 # This should point to the public location of this yaml file.
 dashboard_import:
   package_import_url: github://esphome/esphome-onioff-smart-switch/onioff-light.yaml@main
 
 packages:
-  device-base: !include
-    file: common/project-base.yaml
-    vars:
-      name: ${name}
-      friendly_name: ${friendly_name}
-
   onioff-base: !include
     file: common/onioff-base.yaml
     vars:

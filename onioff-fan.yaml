@@ -3,11 +3,11 @@ substitutions:
   restore_mode: "ALWAYS_OFF"
 
 esphome:
-  name: "onioff-fan"
+  name: "onioff-switch-fan"
   friendly_name: "ONiOFF Fan Switch"
   project:
-    name: cblumer.onioff-fan
-    version: 0.9.2
+    name: cblumer.onioff-switch-fan
+    version: 0.9.3
 
 # This should point to the public location of this yaml file.
 dashboard_import:
