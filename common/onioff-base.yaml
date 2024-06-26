@@ -45,3 +45,15 @@ ${device_type}:
     id: relay_${device_type}
     output: relay
     restore_mode: ${restore_mode}
+    on_turn_on:
+      then:
+        - logger.log:
+            format: ${device_name} turned on
+            level: INFO
+            tag: ${device_type}
+    on_turn_off:
+      then:
+        - logger.log:
+            format: ${device_name} turned off
+            level: INFO
+            tag: ${device_type}
