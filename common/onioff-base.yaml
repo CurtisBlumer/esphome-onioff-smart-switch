@@ -3,11 +3,18 @@ esphome:
   # For (future) identification, configuration and updates
   project:
     name: cblumer.onioff-base
-    version: 1.0.3
+    version: 1.0.4
 
 packages:
-  project-esp8266: !include project-esp8266.yaml
-  debug-esp8266: !include debug-esp8266.yaml
+  project-esp8266: !include
+    url: https://github.com/CurtisBlumer/esphome-onioff-smart-switch
+    ref: main
+    files:
+      - project-esp8266.yaml
+      # - debug-esp8266.yaml
+    refresh: 1d
+  # project-esp8266: !include project-esp8266.yaml
+  # debug-esp8266: !include debug-esp8266.yaml
 
 status_led:
   pin:
