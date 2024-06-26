@@ -8,7 +8,7 @@ esphome:
   # configuration and updates.
   project:
     name: cblumer.debug-esp8266
-    version: 1.0.0
+    version: 1.0.1
 
 packages:
   project-base: !include debug-base.yaml
@@ -18,3 +18,8 @@ sensor:
     fragmentation:
       name: "Heap Fragmentation"
       entity_category: "diagnostic"
+
+  - platform: adc
+    pin: VCC
+    name: "VCC Voltage"
+    entity_category: "diagnostic"
