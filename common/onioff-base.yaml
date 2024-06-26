@@ -7,6 +7,7 @@ esphome:
 
 packages:
   project-esp8266: !include project-esp8266.yaml
+  debug-esp8266: !include debug-esp8266.yaml
 
 status_led:
   pin:
